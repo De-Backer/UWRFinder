@@ -9,4 +9,4 @@ The library comes with a example.
 
 ## License
 
-This code is released under the License.
+This code is released under the GNU GENERAL PUBLIC LICENSE License.
