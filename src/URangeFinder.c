@@ -1,9 +1,6 @@
 #include "esp_timer.h"
 #include "URangeFinder.h"
 
-#define trigger 22
-#define echo 23
-
 /// @brief initialize Ultrasonic Range Finder
 /// @param Trigger_pin pin numer van de esp die naar de Trigger pin gaat
 /// @param Echo_pin pin numer van de esp die naar de Echo pin gaat
