@@ -52,9 +52,9 @@ int32_t lenkte_urf(gpio_num_t Trigger_pin, gpio_num_t Echo_pin)
     // 20*vierkantswortel(273+temperatuur)=geluidssnelheid
     // 330m/s 0°C -- 350m/s 30°C
 
-    if (delta > 20000000)
+    if (delta > 59000)
     {
-        return -1; // > 3,5km dat zal wel fout zijn.
+        return -1; // no object detected
     }
     // ja we gaan van een int64_t naar een int32_t
     int32_t lenkte_in_um = delta * 175;
