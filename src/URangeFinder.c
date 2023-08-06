@@ -43,6 +43,7 @@ int32_t lenkte_urf(gpio_num_t Trigger_pin, gpio_num_t Echo_pin)
     }
     // 60ms == End of measurement
     int64_t delta = stop_tijd - start_tijd;
+
     // Test distance = (high time * speed of sound (340M / s)) / 2;
     // 340M/s => 340000mm/s =>/2 => 170000mm/s => 170mm/ms => 170µm/µs
     // opm: de temperatuur doet de geluidssnelheid stijgen!
@@ -55,6 +56,5 @@ int32_t lenkte_urf(gpio_num_t Trigger_pin, gpio_num_t Echo_pin)
     }
     // ja we gaan van een int64_t naar een int32_t
     int32_t lenkte_in_um = delta * 175;
-    // printf("lenkte %" PRId64 "µm\n", lenkte_in_um);
     return lenkte_in_um;
 }
