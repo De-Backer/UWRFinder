@@ -1,4 +1,3 @@
-
 set(COMPONENT_SRCDIRS
     "src"
 )
